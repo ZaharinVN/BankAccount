@@ -59,7 +59,7 @@ class BankAccount {
             if (amount >= 0){
                 System.out.println("На вашем счету осталось " + amount + " " + currency); // если на счету положительная сумма, то выведите сообщение "На вашем счету осталось {amount} {currency}",
             } else { // иначе "Ваша задолженность по кредитному счету составялет {amount} {currency}"
-                System.out.println("Ваша задолженность по кредитному счету составялет " + amount + " " + currency);
+                System.out.println("Ваша задолженность по кредитному счету составялет " + Math.abs(amount) + " " + currency);
             }
         }
     }
